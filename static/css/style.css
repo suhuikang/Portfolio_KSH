@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* reset */
+* {margin: 0;padding: 0;}
+body {font-size: 14px; font-family: 'Noto Sans KR', 'sans-serif';}
+ul,li {margin: 0;padding: 0;list-style: none;}
+h1, h2, h3, h4, h5, h6 {margin: 0;padding: 0;}
+a {text-decoration: none; color: inherit;}
+a img {border: none;}
+
+/* =======================================
+    header
+========================================== */
+#wrap header {background: black;}
+
+
+/* ===========================================
+    main
+============================================== */
+#wrap section.main {width: 100%; height: 1000px;
+    background: url("../images/back.JPG")no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+    min-width: 1400px;}
+
+/* main text */
+#wrap section.main .mainTitle {position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%); color: #fff; text-align: center;
+    letter-spacing: -1px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5); }
+#wrap section.main .mainTitle h1 {font-size: 47px; margin-bottom: 20px;
+    font-weight: bold;}
+#wrap section.main .mainTitle p {font-size: 25px; margin-top: 50px; margin-bottom: 30px;}
+
+/* ===========================================
+    section title - 4ea
+============================================== */
+.title {font-family: 'Exo 2', sans-serif; color: #000; text-align: center;}
+.title h2 {font-size: 45px; margin-bottom: 10px; font-weight: bold;}
+.title h2  span {color: #ff8342;}
+.title p {font-size: 18px; color: #555;}
+
+
+
+/* ===========================================
+    2.about
+============================================== */
+#wrap section.project {width: 100%; background: #fff; padding: 80px 0; min-width: 1400px;}
+#wrap section.project ul {width: 1400px; margin: 50px auto; overflow: hidden;}
+#wrap section.project ul li {float: left; width: 33.3333%;}
+#wrap section.project ul li a {display: block;}
+#wrap section.project ul li a p.scale {width: 100%; height: 369px; overflow: hidden;}
+#wrap section.project ul li a p.scale img {width: 100%; height: auto; transition: .8s;}
+#wrap section.project ul li a:hover p.scale img {transform: scale(1.2);}
+
+/* text */
+#wrap section.project ul li a .text {padding: 30px;}
+#wrap section.project ul li a .text h3 {font-size: 20px; margin-bottom: 10px;}
+#wrap section.project ul li a .text p {font-size: 16px; margin-bottom: 10px;}
+
+/* btn */
+#wrap section.project ul li a .text p.more {font-weight: bold; padding-left: 40px; position: relative;}
+#wrap section.project ul li a .text p.more:hover {color: #666;}
+
+/* 아이콘 */
+#wrap section.project ul li a .text p.more:before {content: '\f178'; width: 30px; height: 30px;
+    line-height: 30px; background: #ff8342; font-family: FontAwesome;
+    border-radius: 50%; position: absolute; left: 0; padding-left: 0.4px;}
+
+/* ===========================================
+    footer
+============================================== */
+#wrap footer {background: yellow;}

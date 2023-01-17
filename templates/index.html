@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio_KSH</title>
+    <link href="{{ url_for('static', filename='/css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+<!--        ==================================-->
+<!--            header      -->
+<!--        ===================================-->
+        <header>
+            <div class="innerHeader">
+
+            </div>
+        </header>
+
+<!--        ==================================-->
+<!--            main        -->
+<!--        ===================================-->
+            <section class="main">
+                <div class="mainTitle">
+                    <h1>
+                       KANG SUHUI <br>
+                        PROTFOLIO
+                    </h1>
+                    <p>Python, Pansdas, MySql, Dash, Flask</p>
+                </div>
+            </section>
+
+<!--        -- project ----------------                           -->
+            <section class="project">
+                <div class="title">
+                    <h2> P R O J E C T</h2>
+                </div>
+                <ul>
+                    <li>
+                        <a href="/keyword">
+                            <p class="scale">
+                                <img src="../static/images/슬라이드1.jpg" alt="쇼핑키워드">
+                            </p>
+                            <!-- 설명 -->
+                            <div class="text">
+                                <h3>쇼핑키워드 분석</h3>
+                                <p>온라인 판매 카테고리 별 키워드 분석</p>
+                                <p class="more">MORE</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/ddareung">
+                            <p class="scale">
+                                <img src="../static/images/2_title.jpg" alt="따릉이">
+                            </p>
+                            <!-- 설명 -->
+                            <div class="text">
+                                <h3>따릉이</h3>
+                                <p>머신러닝 기반 따릉이 수요예측</p>
+                                <p class="more">MORE</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/jeju">
+                            <p class="scale">
+                                <img src="./images/about_3.jpg" alt="제주창업">
+                            </p>
+                            <!-- 설명 -->
+                            <div class="text">
+                                <h3>제주창업</h3>
+                                <p>제주 예비창업자를 위한 추천업종 분석 </p>
+                                <p class="more">MORE</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+
+<!--        ==================================-->
+<!--            footer       -->
+<!--        ===================================-->
+        <footer>
+            <div class="footerInner">
+
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
