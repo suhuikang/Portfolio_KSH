@@ -1,17 +1,35 @@
 import plotly.express as px
 import pandas as pd
 
-
+# ----text-----
 def app3_intro_text():
     app3_intro = '''
-    # 제주 예비창업자를 위한 업종분석  
+    # 제주 예비창업자를 위한 외식업종분석  
 
-    제주형 실패보장제를 통해 창업에 도전하고 싶은 예비창업자들을 위한 분석  
-
+    제주도에서 창업실패보장제를 실시한다는 기사를 보고  
+    창업을 고려하는 에비창업주들에게 정보를 제공하고자 주제선정  
+    
+    17년도부터 지역별, 업종별 카드매출 통계와  
+    예비창업주의 자본금 등을 고려하여 위치 및 업종 선정 정보제공
+    
+    git [https://github.com/suhuikang/Portfolio_KSH.git](https://github.com/suhuikang/Portfolio_KSH.git)  
+    
     '''
     return app3_intro
 
+def app3_set_text():
+    text = '''
+    프로젝트 진행기간 : 2023.01.09 ~ 2023.01.13  
+    
+    개발환경  
+    python, pandas, Flask, Dash
+    '''
 
+    return text
+
+
+
+# -----fig------
 def app3_fig():
     dfff = pd.read_csv('./assets/업종별 카드매출.csv', index_col=0)
     fig = px.line(dfff, x='연월', y=['건강보조식품 소매업', '골프장 운영업', '과실 및 채소 소매업', '관광 민예품 및 선물용품 소매업',
@@ -69,8 +87,7 @@ def app3_fig_pop(selected_year):
     dpop = df.sort_values('거주인구')
 
     fig = px.bar(dpop, x=["방문인구", "근무인구", "거주인구"], y='지역',
-             title='2021년 지역별 인구(평균)',
-             width=800, height=800)
+             title='2021년 지역별 인구(평균)')
 
     fig.update_layout(transition_duration=500)
 

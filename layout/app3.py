@@ -4,16 +4,13 @@ from dash import html, dcc
 
 def app3_layout():
     sample_layout = html.Div([
-        html.Div(className="app3_header",
-                 children=[
-                     html.Img(),
-                     dcc.Markdown(children=app3_d.app3_intro_text())
-                 ]),
+        html.Div([
+            html.Img(src='/static/images/pro3.jpg', style={'height':'20%', 'width':'20%'}),
+            dcc.Markdown(children=app3_d.app3_intro_text())
+            ],style={'border-bottom': 'thin lightgrey solid'}),
         html.Div(className="app3_main",
                  children=[
-                     html.Div(
-                        '''tngml'''
-                     ),
+                     dcc.Markdown(children=app3_d.app3_set_text()),
                      dcc.Graph(
                         id='app3_graph',
                         figure=app3_d.app3_fig()
@@ -56,9 +53,9 @@ def app3_layout():
                          id='app3_f_graph',
                          figure=app3_d.app3_f_temp()
                      )
-                 ]),
+                 ], style={'display': 'inline-block', 'width': '80%'}),
         html.Div(className="app3_footer")
 
-    ])
+    ],style={'textAlign': 'center'})
 
     return sample_layout
