@@ -52,7 +52,7 @@ def app3_fig_pop(selected_year):
 
     fig = px.bar(dpop, x=["방문인구", "근무인구", "거주인구"], y='지역',
              title='지역별 인구(평균)',
-             width=1200, height=800)
+             height=800)
 
     fig.update_layout(transition_duration=500)
 
