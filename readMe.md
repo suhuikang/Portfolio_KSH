@@ -92,8 +92,9 @@ git [보러가기](https://github.com/suhuikang/pj_02_ddareung/blob/main/bigdata
     직관적인 지역별 데이터 제공 (geopandas)  
 
 
-ppt [보러가기]()  
-git [보러가기]()   
+web [보러가기]([fc40da00-0926-48fe-a9ef-bdfbe8d74749.pdf](https://github.com/suhuikang/Portfolio_KSH/files/11188412/fc40da00-0926-48fe-a9ef-bdfbe8d74749.pdf)
+
+
 
 ## 기술 스택과 개발환경
 
